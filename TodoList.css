@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    line-height: 1.6;
     font-weight: 600;
     font-size: 16px;
 }
@@ -38,9 +39,6 @@ body{
 
 .data{
     display: flex;
-    /* background-color: #fff;
-    padding: 15px;
-    border-radius: 5px; */
 }
 
 input{
@@ -82,6 +80,7 @@ table th {
 }
 
 
+/* Modal */
 .modal{
     position: absolute;
     top: 0;
@@ -142,3 +141,12 @@ button:hover,
     color: orange;
 }
 
+@media (max-width: 992px){
+    #main {
+        width: 95%;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}

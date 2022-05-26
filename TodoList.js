@@ -67,6 +67,9 @@ function editData(i){
         const newMemBer = $('#newMember').val()
         const newToDo = $('#newTodo').val()
         const newDeaLine = $('#newDeaLine').val()
+        if(newMemBer == '' || newToDo == '' || newDeaLine == '') {
+            alert('Vui lòng nhập đầy đủ các trường')
+        }else {
             data[i] = {member: newMemBer, toDo:newToDo, deaLine:newDeaLine}
             $('#newMember').val('')
             $('#newTodo').val('')
@@ -75,6 +78,7 @@ function editData(i){
             render()
             $('.modal').hide()
             $('.modal-content').animate({opacity: 0, top:-100})
+        }
     })
 }
 
