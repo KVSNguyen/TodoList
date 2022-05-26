@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(139, 245, 97), rgb(82, 245, 223));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: changeColor 0.5s infinite;
+}
+
+@keyframes changeColor {
+    0%{
+        color: red;
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: yellow;
+    }
+    100%{
+        color: white;
+    }
+}
+
+.data{
+    display: flex;
+    /* background-color: #fff;
+    padding: 15px;
+    border-radius: 5px; */
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input:focus {
+    border: 1px solid rgb(115, 231, 247);
+}
+
+button{
+    font-size: 18px;
+    margin: 10px;
+    background-color: rgb(129, 206, 206);
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+table {
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 5px 10px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.dealine, .todo{
+    margin-left: 20px;
+}
+
+.modal-content{
+    width: 400px;
+    padding: 20px;
+    position: fixed;
+    left: 50%; 
+    position: relative;
+    transform: translateX(-50%);
+    border: 1px solid gray;
+    background:linear-gradient(to right, rgb(147, 250, 152), rgb(99, 224, 255));
+    border-radius: 10px;
+}
+
+.header-modal{
+    height: 50px;
+}
+
+.header-modal h2{
+    text-align: center;
+    animation: changeColor 0.5s infinite;
+}
+
+.header-modal .fa {
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    right: 5px;
+    font-size: 20px;
+}
+
+button:hover,
+.header-modal .fa:hover{
+    opacity: 0.7;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.red{
+    color: red;
+}
+
+.orange{
+    color: orange;
+}
+

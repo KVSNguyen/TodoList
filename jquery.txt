@@ -1,0 +1,25 @@
+jquery được xây dựng lấy gốc là DOM
+
+có thể chuyển đổi qua lại giữa DOM và Jquery
+
+DOM => jquery             $(DOM)
+jquery => DOM             $()[i]
+
+$('tag .class #id')       trỏ các thẻ HTML
+
+.eq(i)                    lấy 1 phần tử trong array của jquery
+$()[i]                    jquery => DOM
+
+.html()                   innerHTML
+.val()                    value
+
+.remove()                 remove()
+
+.append                   append
+.prepend                  prepend
+
+.attr('attribute')        getAttribute
+.attr('attribute', value) setAttribute
+
+.on('event', callback)    addEventListenner
+.off('event')             removeEventListener

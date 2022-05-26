@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./TodoList.css">
+</head>
+<body>
+    <div id="main"> 
+        <h1>TodoList</h1>
+        <div class="data">
+            <div>
+                <input type="text" placeholder="Member" id = "member">
+                <input type="text" placeholder="To-do" id = "toDo">
+                <input type="date" id="deaLine"> 
+            </div>
+            <button onclick = 'add()'>Add</button>
+        </div>
+
+        <div>
+            <table class="TodoList">          
+                <tr class="item">
+                    <th>Name</th>
+                    <th>To Do</th>
+                    <th>Date</th>
+                    <th>Option</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <div class="header-modal">
+                    <h2>Change Mission</h2>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="body-modal">
+                        <input type="text" placeholder="Member" id = "newMember">
+                        <input type="text" placeholder="To-do" id="newTodo">
+                        <input type="date" id="newDeaLine">
+                </div>
+                <div class="modal-footer">
+                    <button class="change">Save</button>
+                    <button class="cancel"> Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./TodoList.js"></script>
+</html>
